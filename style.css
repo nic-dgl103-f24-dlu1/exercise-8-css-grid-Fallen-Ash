@@ -6,5 +6,39 @@
     grid-template-columns: 1fr 3fr 2fr;
     grid-template-rows: 400px 3fr 1fr;
 }
-
 /*change row one size */
+
+header{
+    background-color: rgba(100, 148, 237, 0.596); 
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row: 1;
+}
+
+
+
+
+
+.main{
+    background-color:rgba(236, 222, 90, 0.541); 
+    grid-column: 1/3; 
+    grid-row: 2/3;
+}
+
+
+
+
+
+
+.aside{
+    background-color: rgba(102, 51, 153, 0.521); 
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: 3/4;
+}
+
+.footer{
+    background-color: rgba(255, 123, 75, 0.548); 
+    grid-column: 1/4; 
+    grid-row: 3/4;
+}
