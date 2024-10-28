@@ -15,7 +15,16 @@ header{
     grid-row: 1;
 }
 
+.header img{width: 150px;}
 
+#header-layout{display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+.header-nav{grid-column: 2;
+    grid-row: 2;
+}
 
 
 
