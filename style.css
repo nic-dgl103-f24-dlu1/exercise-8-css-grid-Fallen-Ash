@@ -1,0 +1,10 @@
+
+
+
+.body{
+    display:grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 400px 3fr 1fr;
+}
+
+/*change row one size */
