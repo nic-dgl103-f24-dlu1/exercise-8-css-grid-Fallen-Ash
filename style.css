@@ -3,30 +3,38 @@
 
 .body{
     display:grid;
-    grid-template-columns: 1fr 3fr 2fr 2fr;
-    grid-template-rows: 350px 3fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr 3fr;
+    grid-template-rows: 300px 3fr 1fr 1fr;
 }
 /*change row one size */
 
-header{
+.header{
     background-color: rgba(100, 148, 237, 0.596); 
     grid-column-start: 1; 
     grid-column-end: 5; 
     grid-row: 1;
+    border: 2px dotted red;
 }
 
-.header img{width: 150px;}
+.header-logo{
+    width: 150px; border: 2px dotted red;
+}
 
 #header-layout{display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; border: 2px dotted red;
 }
 
-.header-nav{grid-column: 2;
-    grid-row: 2;
+.header-nav{grid-column: 3;
+    grid-row: 3; border: 2px dotted red;
 }
 
-
+.header h1{
+    grid-column: 2;
+    grid-row: 1; 
+    border: 2px dotted red;
+    justify-self: center;
+}
 
 .main{
     background-color:rgba(236, 222, 90, 0.541); 
