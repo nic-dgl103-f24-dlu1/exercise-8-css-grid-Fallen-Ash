@@ -1,17 +1,17 @@
 
+*{display: grid;}
 
-
-.body{
+body{
     display:grid;
-    grid-template-columns: 1fr 4fr 3fr;
-    grid-template-rows: 300px 3fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 0.5fr 3fr 1fr;
 }
 /*change row one size */
 
 .header-layout{
     background-color: rgba(100, 148, 237, 0.596); 
     grid-column-start: 1; 
-    grid-column-end: 5; 
+    grid-column-end: 4; 
     grid-row: 1;
     border: 2px dotted red;
 }
@@ -34,9 +34,10 @@
     border: 2px dotted red;
     align-self: center;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-.header-nav li{text-decoration: none;}
+
 
 .header-h1{
     grid-column: 2;
