@@ -217,6 +217,19 @@ body{
 }
 
 /*aside css section*/
+.aside{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: 3/4;
+    border: 2px solid rgb(133, 63, 202);
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.aside{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr ;  
+}
 
 
 
