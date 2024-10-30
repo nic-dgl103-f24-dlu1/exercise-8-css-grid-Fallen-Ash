@@ -203,7 +203,17 @@ body{
     font-weight:700;
     text-transform: uppercase;
 }
-
+.loose-leaf-tea{
+    width:225px; 
+    grid-column: 5;
+    grid-row: 1/5;
+    border-radius: 10px 45px;
+}
+.lavendersteeping{width:250px;
+    grid-column: 1;
+    grid-row:5;
+    border-radius: 45px 10px;
+}
 
 
 
