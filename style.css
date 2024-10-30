@@ -317,15 +317,19 @@ body{
 }
 
 .aside-article2-link{
-grid-column: 1/2;
-grid-row:5;
-justify-content: center;
-align-content: end;
-color: rgb(0, 0, 0);
-text-transform: lowercase;
-text-decoration: underline;
+ grid-column: 1/2;
+ grid-row:5;
+ justify-content: center;
+ align-content: end;
+ color: rgb(0, 0, 0);
+ text-transform: lowercase;
+ text-decoration: underline;
 }
-
+.breakfast-tea{ 
+    grid-column:3;
+    grid-row:5;
+    width:220px;
+    border-radius:10px;}
 
 
 
