@@ -375,6 +375,11 @@ body{
     border-radius:10px;
 }
 
+/*footer css*/
+
+
+/*I can't quite seem to work out how to get the grid area to do what I want. the first portion; the contact; works as you would expect, but the other two overlap eachother in the middle.*/
+/*Will be giving up on the grid area portion of the assignment. Might come back to it in a few days, but will just have to take the loss in marks*/
 .footer{
     background-color: rgba(255, 123, 75, 0.548); 
     grid-column: 1/4; 
