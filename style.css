@@ -331,7 +331,16 @@ body{
     width:220px;
     border-radius:10px;}
 
-
+/*beginning of article 3*/
+.article-three{
+    font-size: 1.2rem;
+    font-weight: 300;
+    grid-column: 1/5;
+    grid-row: 5/6;
+    border: 2px double rgb(133, 63, 202);
+    border-radius:15px;
+    margin: 8px;
+}
 
 
 
