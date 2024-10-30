@@ -230,7 +230,22 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr ;  
 }
-
+.article-section{
+    grid-column: 1/5;
+    grid-row:1/6;
+    font-family: 'Oxygen',sans-serif;
+}
+.checkout-articles{
+    grid-column:1/5;
+    grid-row:1;
+    font-size:3.0rem;
+    font-weight: 700;
+    font-family: 'Oxygen',sans-serif;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    text-align: center; 
+}
 
 
 .oxygen-light {
