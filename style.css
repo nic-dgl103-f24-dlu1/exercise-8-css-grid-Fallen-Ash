@@ -297,7 +297,34 @@ body{
     border-radius:15px;
     margin: 8px;
 }
+.aside-article2-h3{
+    font-size:1.8rem;
+    grid-column: 1/3;
+    grid-row: 5;
+    text-transform: uppercase;
+    justify-content: center;
+    align-content: start;
+    text-align: center;
+}
 
+.aside-article2-content{
+ grid-column: 1/2;
+ grid-row:5;
+ align-content:end;
+ justify-content: center;
+ text-align: center;
+ margin:8px;
+}
+
+.aside-article2-link{
+grid-column: 1/2;
+grid-row:5;
+justify-content: center;
+align-content: end;
+color: rgb(0, 0, 0);
+text-transform: lowercase;
+text-decoration: underline;
+}
 
 
 
