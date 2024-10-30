@@ -380,8 +380,22 @@ body{
     grid-column: 1/4; 
     grid-row: 3/4;
     font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+     'contact socials nav'
+     'contact socials nav'
+     'contact socials nav'
+     ;
+
 }
 
+.contact-us{grid-area: contact;}
+
+.foot-socials{grid-area: socials;}
+
+.foot-nav{grid-area: nav;}
 
 
 
