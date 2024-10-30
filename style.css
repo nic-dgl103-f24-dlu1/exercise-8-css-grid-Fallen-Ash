@@ -367,7 +367,13 @@ body{
     color: rgb(0, 0, 0);
     text-transform: lowercase;
     text-decoration: underline;
-    }
+}
+.tea-ceremony{  
+    grid-column:3;
+    grid-row: 6;
+    width:220px;
+    border-radius:10px;
+}
 
 
 
