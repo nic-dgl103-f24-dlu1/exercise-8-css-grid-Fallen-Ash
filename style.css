@@ -380,14 +380,14 @@ body{
     grid-column: 1/4; 
     grid-row: 3/4;
     font-size: 1.6rem;
+    font-family: 'Oxygen', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 0.35fr);
     grid-template-areas:
-     'contact socials nav'
-     'contact socials nav'
-     'contact socials nav'
-     ;
+    "contact contact contact"
+    "socials socials socials"
+    "nav nav nav";
 
 }
 
