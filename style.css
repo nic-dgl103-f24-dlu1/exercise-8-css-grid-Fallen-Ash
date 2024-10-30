@@ -272,6 +272,37 @@ body{
     text-align: center;
     margin:8px;
 }
+.aside-article1-link{
+    grid-column: 1/2;
+    grid-row:4;
+    justify-content: center;
+    align-content: end;
+    color: rgb(0, 0, 0);
+    text-transform: lowercase;
+    text-decoration: underline;
+    }
+.tea-making{
+    grid-column:3;
+    grid-row:4;
+    width:220px;
+    border-radius:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .oxygen-light {
     font-family: "Oxygen", sans-serif;
