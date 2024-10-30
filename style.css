@@ -1,448 +1,466 @@
-
-*{display: grid;}
-html{font-size: 62.5%;}
-head{display: none;}
+* {
+  display: grid;
+}
+html {
+  font-size: 62.5%;
+}
+head {
+  display: none;
+}
 /*I haven't been able to figure out why each element inside the body doesn't like the display property. Every time I check it shows up as article {display:block} nav, ul, li, etc... This was the only way I could get it to work, but then the page title was showing up on the screen so I had to explicitly hide that chunk*/
 
-
-body{
-    display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
-    grid-template-rows: 0.1fr 3fr 150px;
-    gap: 15px 10px;
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-rows: 0.1fr 3fr 150px;
+  gap: 15px 10px;
 }
 /*change row one size */
 
-.header-layout{
-     
-    grid-column-start: 1; 
-    grid-column-end: 4; 
-    grid-row: 1;
-    font-family: 'Oxygen', sans-serif;
+.header-layout {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 1;
+  font-family: "Oxygen", sans-serif;
 }
 
-
-.header-layout{
-    display: grid;
-    grid-template-rows: 1fr min-content 1fr;
-    grid-template-columns: 25px 1fr 1fr 1fr; 
-    
+.header-layout {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  grid-template-columns: 25px 1fr 1fr 1fr;
 }
 
-.header-logo{
-    
-    grid-row: 2/3;
-    grid-column: 2/3;
-    justify-self: center;
-    align-self: center;
-    width: 400px;
-    border:2px double cornflowerblue;
-    border-radius: 175px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+.header-logo {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-self: center;
+  align-self: center;
+  width: 400px;
+  border: 2px double cornflowerblue;
+  border-radius: 175px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 /*box shadow taken from getcssscan.com, creator wasn't listed, but it was number 22*/
 
-.header-h1{
-    grid-column: 3/5;
-    grid-row: 2; 
-    
-    font-size:6.0rem;
-    font-weight: 700;
-    letter-spacing: 4px;
-    font-family: 'Oxygen', sans-serif;
-    justify-content:space-around;
-    align-content: center;   
-}
-.header-nav{
-    grid-column: 3/5;
-    grid-row: 3; 
-    text-transform: uppercase;
-    font-size:1.3rem;
-    font-weight: 400 ;
-    
-}
-.header-nav li{grid-row: 3; justify-content: space-around;}
+.header-h1 {
+  grid-column: 3/5;
+  grid-row: 2;
 
-.main-layout{
-    grid-column:1/3; 
-    grid-row: 2/3;   
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-family: "Oxygen", sans-serif;
+  justify-content: space-around;
+  align-content: center;
+}
+.header-nav {
+  grid-column: 3/5;
+  grid-row: 3;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.header-nav li {
+  grid-row: 3;
+  justify-content: space-around;
 }
 
-.main-layout{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 1fr;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 10px;  
+.main-layout {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr 0.5fr 1fr 1fr;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
 }
 /*I originally did this chunk all at the same time without saving, so had to go back and re do it to properly add the commits, which makes it difficult to tell where in the timeline I have gone wrong, but I can still look at specific sections. Will try to be better about this next assignment.*/
-.main-section1{
-    grid-column:1/5;
-    grid-row:1/4;
-    font-family: 'Oxygen', sans-serif; 
-    background-color:rgba(245, 249, 255, 0.274) ;
-    border: 2px solid cornflowerblue;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.main-section1 {
+  grid-column: 1/5;
+  grid-row: 1/4;
+  font-family: "Oxygen", sans-serif;
+  background-color: rgba(245, 249, 255, 0.274);
+  border: 2px solid cornflowerblue;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.main-section1-article1{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border: 2px double cornflowerblue;
-    background-color:rgba(172, 201, 255, 0.274) ;
-    border-radius: 10px;
-    justify-content: center;
-    grid-column: 1/4;
-    grid-row:1/3;
-    margin:15px;
+.main-section1-article1 {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 2px double cornflowerblue;
+  background-color: rgba(172, 201, 255, 0.274);
+  border-radius: 10px;
+  justify-content: center;
+  grid-column: 1/4;
+  grid-row: 1/3;
+  margin: 15px;
 }
-.tea-talk-h2{ 
-    grid-column: 1/2;
-    grid-row:1/3;
-    justify-content:space-around;
-    align-content: center;
-    font-size: 2.8rem;
-    letter-spacing: 2px;
-    margin: 15px  15px 75px 15px;
-    text-transform: uppercase;
+.tea-talk-h2 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  justify-content: space-around;
+  align-content: center;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  margin: 15px 15px 75px 15px;
+  text-transform: uppercase;
 }
-.tea-talk-content{
-    grid-column: 2/4;
-    grid-row:2/3;
-    font-size:1.4rem;
-    justify-content:center;
-    margin:45px 15px 15px 15px;
-    word-spacing: 4px;
-    text-align:center;
+.tea-talk-content {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  font-size: 1.4rem;
+  justify-content: center;
+  margin: 45px 15px 15px 15px;
+  word-spacing: 4px;
+  text-align: center;
 }
-.types-of-tea{
-    grid-column: 1/4;
-    grid-row: 3/4;
-    align-content: center;
-    font-size: 1.5rem;
-    border: 2px double cornflowerblue;
-    background-color:rgba(172, 201, 255, 0.274) ;
-    border-radius: 10px;
-    margin: 15px;
-    font-family: 'Oxygen',sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.types-of-tea {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  align-content: center;
+  font-size: 1.5rem;
+  border: 2px double cornflowerblue;
+  background-color: rgba(172, 201, 255, 0.274);
+  border-radius: 10px;
+  margin: 15px;
+  font-family: "Oxygen", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.types-of-tea a{color: black; text-transform: lowercase;}
-.types-of-tea li{text-indent: 25px; font-weight: 300; font-family: 'Oxygen',sans-serif;}
-.selection{
-    grid-column: 1/4;
-    grid-row: 3;
-    justify-self: center;
-    align-self: center;
-    font-size: 3.2rem;
-    text-decoration: solid;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: 'Oxygen',sans-serif;
+.types-of-tea a {
+  color: black;
+  text-transform: lowercase;
 }
-.black-tea-list{
-    grid-column: 1;
-    grid-row: 4;
-    justify-content: center;
-    
+.types-of-tea li {
+  text-indent: 25px;
+  font-weight: 300;
+  font-family: "Oxygen", sans-serif;
 }
-.fruit-tea-list{
-    grid-column:2;
-    grid-row: 4;
-    justify-content: center;
+.selection {
+  grid-column: 1/4;
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+  font-size: 3.2rem;
+  text-decoration: solid;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Oxygen", sans-serif;
 }
-.tea-blends-list{
-    grid-column: 3;
-    grid-row: 4;
-    justify-content: center;
+.black-tea-list {
+  grid-column: 1;
+  grid-row: 4;
+  justify-content: center;
+}
+.fruit-tea-list {
+  grid-column: 2;
+  grid-row: 4;
+  justify-content: center;
+}
+.tea-blends-list {
+  grid-column: 3;
+  grid-row: 4;
+  justify-content: center;
 }
 
 /*main css section*/
 
-.main-section2{
-    grid-row:4/6;
-    grid-column: 1/ 5;
-    justify-content: center;
-    font-size: 2.0rem;
-    font-weight:400;
-    font-family: 'Oxygen', sans-serif;  
-    
-    background-color:rgba(245, 249, 255, 0.274) ;
-    border: 2px solid cornflowerblue;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.main-section2 {
+  grid-row: 4/6;
+  grid-column: 1/ 5;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Oxygen", sans-serif;
+
+  background-color: rgba(245, 249, 255, 0.274);
+  border: 2px solid cornflowerblue;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.main-section2-content{
-    grid-row:4/6;
-    grid-column: 1/ 5;
-    justify-content: center;
-    font-size: 2.0rem;
-    font-weight:400;
-    font-family: 'Oxygen', sans-serif;  
-    margin: 15px;
-    border: 2px double cornflowerblue;
-    background-color:rgba(172, 201, 255, 0.274) ;
-    border-radius:10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.main-section2-content {
+  grid-row: 4/6;
+  grid-column: 1/ 5;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Oxygen", sans-serif;
+  margin: 15px;
+  border: 2px double cornflowerblue;
+  background-color: rgba(172, 201, 255, 0.274);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.main-section2-text{
-    grid-column: 3/6;
-    grid-row: 5;
-    font-size: 1.3rem; 
-    justify-self: start;  
-    align-self: center;
-   text-align: center;
-    font-weight:400;
-    margin-right: 15px;  
+.main-section2-text {
+  grid-column: 3/6;
+  grid-row: 5;
+  font-size: 1.3rem;
+  justify-self: start;
+  align-self: center;
+  text-align: center;
+  font-weight: 400;
+  margin-right: 15px;
 }
-.main-section2-h2{
-    grid-column: 1/2;
-    grid-row:2/3;
-    justify-content:center;
-    align-content:start;
-    font-size: 3.2rem;
-    font-weight:700;
-    text-transform: uppercase;
+.main-section2-h2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-content: center;
+  align-content: start;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-.loose-leaf-tea{
-    width:225px; 
-    grid-column: 5;
-    grid-row: 1/5;
-    border-radius: 10px 45px;
+.loose-leaf-tea {
+  width: 225px;
+  grid-column: 5;
+  grid-row: 1/5;
+  border-radius: 10px 45px;
 }
-.lavendersteeping{width:250px;
-    grid-column: 1;
-    grid-row:5;
-    border-radius: 45px 10px;
+.lavendersteeping {
+  width: 250px;
+  grid-column: 1;
+  grid-row: 5;
+  border-radius: 45px 10px;
 }
 
 /*aside css section*/
-.aside{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column: 3/4;
-    border: 2px solid rgb(133, 63, 202);
-    border-radius:10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.aside {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column: 3/4;
+  border: 2px solid rgb(133, 63, 202);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.aside{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr ;  
+.aside {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
 }
-.article-section{
-    grid-column: 1/5;
-    grid-row:1/6;
-    font-family: 'Oxygen',sans-serif;
+.article-section {
+  grid-column: 1/5;
+  grid-row: 1/6;
+  font-family: "Oxygen", sans-serif;
 }
-.checkout-articles{
-    grid-column:1/5;
-    grid-row:1;
-    font-size:3.0rem;
-    font-weight: 700;
-    font-family: 'Oxygen',sans-serif;
-    justify-content: center;
-    align-content: center;
-    text-transform: uppercase;
-    text-align: center; 
+.checkout-articles {
+  grid-column: 1/5;
+  grid-row: 1;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Oxygen", sans-serif;
+  justify-content: center;
+  align-content: center;
+  text-transform: uppercase;
+  text-align: center;
 }
-.article-1{
-    font-size: 1.2rem;
-    font-weight: 300;
-    grid-column: 1/5;
-    grid-row: 2/3;
-    border: 2px double rgb(133, 63, 202);
-    border-radius:15px;
-    margin: 8px;
+.article-1 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  background-color: rgba(198, 141, 255, 0.438);
+  border: 2px double rgb(133, 63, 202);
+  border-radius: 15px;
+  margin: 8px;
 }
-.aside-article1-h3{
-    font-size:1.8rem;
-    grid-column: 1/3;
-    grid-row: 3;
-    text-transform: uppercase;
-    justify-content: center;
-    align-content: start;  
+.aside-article1-h3 {
+  font-size: 1.8rem;
+  grid-column: 1/3;
+  grid-row: 3;
+  text-transform: uppercase;
+  justify-content: center;
+  align-content: start;
 }
 
-.aside-article1-content{
-    grid-column: 1/2;
-    grid-row:4;
-    align-content:end;
-    justify-content: center;
-    text-align: center;
-    margin:8px;
+.aside-article1-content {
+  grid-column: 1/2;
+  grid-row: 4;
+  align-content: end;
+  justify-content: center;
+  text-align: center;
+  margin: 8px;
 }
-.aside-article1-link{
-    grid-column: 1/2;
-    grid-row:4;
-    justify-content: center;
-    align-content: end;
-    color: rgb(0, 0, 0);
-    text-transform: lowercase;
-    text-decoration: underline;
-    }
-.tea-making{
-    grid-column:3;
-    grid-row:4;
-    width:220px;
-    border-radius:10px;
+.aside-article1-link {
+  grid-column: 1/2;
+  grid-row: 4;
+  justify-content: center;
+  align-content: end;
+  color: rgb(0, 0, 0);
+  text-transform: lowercase;
+  text-decoration: underline;
+}
+.tea-making {
+  grid-column: 3;
+  grid-row: 4;
+  width: 220px;
+  border-radius: 10px;
 }
 
 /*start of article two css*/
-.article-two{font-size: 1.2rem;
-    font-weight: 300;
-    grid-column: 1/5;
-    grid-row: 3/4;
-    border: 2px double rgb(133, 63, 202);
-    border-radius:15px;
-    margin: 8px;
+.article-two {
+  font-size: 1.2rem;
+  font-weight: 300;
+  grid-column: 1/5;
+  grid-row: 3/4;
+  border: 2px double rgb(133, 63, 202);
+  background-color: rgba(198, 141, 255, 0.438);
+  border-radius: 15px;
+  margin: 8px;
 }
-.aside-article2-h3{
-    font-size:1.8rem;
-    grid-column: 1/3;
-    grid-row: 5;
-    text-transform: uppercase;
-    justify-content: center;
-    align-content: start;
-    text-align: center;
-}
-
-.aside-article2-content{
- grid-column: 1/2;
- grid-row:5;
- align-content:end;
- justify-content: center;
- text-align: center;
- margin:8px;
+.aside-article2-h3 {
+  font-size: 1.8rem;
+  grid-column: 1/3;
+  grid-row: 5;
+  text-transform: uppercase;
+  justify-content: center;
+  align-content: start;
+  text-align: center;
 }
 
-.aside-article2-link{
- grid-column: 1/2;
- grid-row:5;
- justify-content: center;
- align-content: end;
- color: rgb(0, 0, 0);
- text-transform: lowercase;
- text-decoration: underline;
+.aside-article2-content {
+  grid-column: 1/2;
+  grid-row: 5;
+  align-content: end;
+  justify-content: center;
+  text-align: center;
+  margin: 8px;
 }
-.breakfast-tea{ 
-    grid-column:3;
-    grid-row:5;
-    width:220px;
-    border-radius:10px;}
+
+.aside-article2-link {
+  grid-column: 1/2;
+  grid-row: 5;
+  justify-content: center;
+  align-content: end;
+  color: rgb(0, 0, 0);
+  text-transform: lowercase;
+  text-decoration: underline;
+}
+.breakfast-tea {
+  grid-column: 3;
+  grid-row: 5;
+  width: 220px;
+  border-radius: 10px;
+}
 
 /*beginning of article 3*/
-.article-three{
-    font-size: 1.2rem;
-    font-weight: 300;
-    grid-column: 1/5;
-    grid-row: 5/6;
-    border: 2px double rgb(133, 63, 202);
-    border-radius:15px;
-    margin: 8px;
+.article-three {
+  font-size: 1.2rem;
+  font-weight: 300;
+  grid-column: 1/5;
+  grid-row: 5/6;
+  border: 2px double rgb(133, 63, 202);
+  background-color: rgba(198, 141, 255, 0.438);
+  border-radius: 15px;
+  margin: 8px;
 }
-.aside-article3-h3{
-    font-size:1.8rem;
-    grid-column: 1/3;
-    grid-row: 6;
-    text-transform: uppercase;
-    justify-content: center;
-    align-content: start;
-    text-align: center;
+.aside-article3-h3 {
+  font-size: 1.8rem;
+  grid-column: 1/3;
+  grid-row: 6;
+  text-transform: uppercase;
+  justify-content: center;
+  align-content: start;
+  text-align: center;
 }
-.aside-article3-content{
-    grid-column: 1/2;
-    grid-row:6;
-    align-content:center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.2rem;
-    margin:8px;
+.aside-article3-content {
+  grid-column: 1/2;
+  grid-row: 6;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 8px;
 }
-.aside-article3-link{
-    grid-column: 1/2;
-    grid-row:6;
-    justify-content: center;
-    align-content: end;
-    color: rgb(0, 0, 0);
-    text-transform: lowercase;
-    text-decoration: underline;
+.aside-article3-link {
+  grid-column: 1/2;
+  grid-row: 6;
+  justify-content: center;
+  align-content: end;
+  color: rgb(0, 0, 0);
+  text-transform: lowercase;
+  text-decoration: underline;
 }
-.tea-ceremony{  
-    grid-column:3;
-    grid-row: 6;
-    width:220px;
-    border-radius:10px;
+.tea-ceremony {
+  grid-column: 3;
+  grid-row: 6;
+  width: 220px;
+  border-radius: 10px;
 }
 
 /*footer css*/
 
-
 /*I can't quite seem to work out how to get the grid area to do what I want. the first portion; the contact; works as you would expect, but the other two overlap eachother in the middle.*/
 /*Will be giving up on the grid area portion of the assignment. Might come back to it in a few days, but will just have to take the loss in marks*/
-.footer{
-    background-color: rgba(255, 142, 221, 0.363); 
-    grid-column: 1/4; 
-    grid-row: 3/4;
-    font-size: 1.6rem;
-    font-family: 'Oxygen', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
-    
+.footer {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  font-size: 1.6rem;
+  font-family: "Oxygen", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  background-color: rgba(255, 135, 225, 0.575);
+  border: 2px solid rgb(209, 62, 172);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.contact-us{grid-column: 1/4;
-  grid-row:1/3 ;
+.contact-us {
+  grid-column: 1/4;
+  grid-row: 1/3;
   justify-content: space-around;
 }
 
-.address{
-    grid-column: 1/2;
-    grid-row: 1/2; 
-    justify-content: center;
-    align-self: center;
-    font-style: normal;
+.address {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-content: center;
+  align-self: center;
+  font-style: normal;
 }
-.address a{grid-column: 1/2;
-    grid-row: 1/2;
-    justify-content: center;
-    align-self: center;
-    color: black;
-    text-decoration: none;
-}
-
-.foot-socials{grid-column: 2/3;
-    grid-row: 1/2;
-    align-self: center;
-    justify-content: space-around;
-}
-.foot-socials a{color: black;
-    text-decoration: none;}
-
-.foot-nav{grid-column: 3/4;
-    grid-row: 1/2;
-    align-self: center;
-    justify-content: center;
+.address a {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-content: center;
+  align-self: center;
+  color: black;
+  text-decoration: none;
 }
 
+.foot-socials {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: center;
+  justify-content: space-around;
+}
+.foot-socials a {
+  color: black;
+  text-decoration: none;
+}
 
-
+.foot-nav {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  align-self: center;
+  justify-content: center;
+}
 
 .oxygen-light {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .oxygen-regular {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .oxygen-bold {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.oxygen-regular {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oxygen-bold {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
